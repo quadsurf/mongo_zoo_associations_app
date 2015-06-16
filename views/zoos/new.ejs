@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+  <form action="/zoos" method="POST">
+  <div>
+    <label for="name">Name:</label>
+    <input autofocus  type="text" name="zoo[name]" id="name">
+  </div>
+  <div>
+    <label for="location">Location:</label>
+    <input type="text" name="zoo[location]" id="location">
+  </div>
+  <div>
+    <input type="submit" value="Add!">
+  </div>
+  </form>
+<% include ../partials/footer %>
