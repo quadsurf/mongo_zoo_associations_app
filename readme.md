@@ -1,4 +1,4 @@
-## Mongo Associations 
+## Mongo Associations Assignment
 
 For this assignment you will need to combine your knowledge of models, and associations to build a zoo application! 
 
