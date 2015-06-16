@@ -26,7 +26,7 @@ Your animal model should have a/an:
 2. Start working on your Zoo and Animal model and use an `index.js` to bundle these models together
 3. Build your routes - **THESE MUST BE RESTful**. Remember that your routes will have animals nested inside of zoos.
 4. Start working on your views
-5. Build full CRUD for your Zoo model and then move onto Animals (this will be more difficult)
+5. Build full CRUD for your Zoo resource and then move onto Animals (this will be more difficult)
 6. Ensure that when a zoo is deleted, all of the animals that belong to it are deleted as well. This will involve using a `pre 'remove' hook`
 
 ### Bonus
