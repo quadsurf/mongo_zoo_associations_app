@@ -91,7 +91,6 @@ app.delete('/zoos/:id', function(req,res){
 // INDEX
 app.get('/zoos/:zoo_id/animals', function(req,res){
   db.Zoo.findById(req.params.zoo_id).populate('animals').exec(function(err,zoo){
-    console.log("HEH???", zoo.animals)
     res.render("animals/index", {zoo:zoo});
   });
 });
@@ -125,7 +124,6 @@ app.post('/zoos/:zoo_id/animals', function(req,res){
 
 // SHOW
 app.get('/animals/:id', function(req,res){
-  // REFACTOR USING POPULATE
   db.Animal.findById(req.params.id)
     .populate('zoo')
     .exec(function(err,animal){
@@ -135,7 +133,6 @@ app.get('/animals/:id', function(req,res){
 
 // EDIT
 app.get('/animals/:id/edit', function(req,res){
-  // REFACTOR USING POPULATE
   db.Animal.findById(req.params.id, function(err,animal){
       res.render("animals/edit", {animal:animal});
     });
